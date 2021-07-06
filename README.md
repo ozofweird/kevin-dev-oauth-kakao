@@ -54,7 +54,7 @@ ozofweird
 ozofweird
 
 ## 📚 References
-
+- https://daddyprogrammer.org/post/1012/springboot2-rest-api-social-login-kakao/
 ---
 
 ## ✉️ Commit messages (Gitmoji)
