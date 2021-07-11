@@ -15,32 +15,36 @@
 - [Commit Message (Gitmoji)](#✉️-commit-messages-gitmoji)
 
 ## 🎉 About
-Explain about this project.
+카카오 소셜 로그인을 구현한 프로젝트입니다. 클라이언트에서 전달해주는 'access_token' 혹은 'refresh_token'을 검증하여 유저의 정보를 가져오는데에 목적을 가지고 있습니다.
 
 ## 👀 Overview
-**Functions you can use.**
+* 카카오 Login
+  * 로그인 화면 리다이렉트 (kakaoLogin / redirectKakao)
+  * 'access_token'을 이용하여 회원 가입, 로그인, 회원 조회 (singinByProvider / singupProvider / findUserById)
+
+* Response(단일 결과, 다중 결과) 및 예외 처리
+* Security 설정
 
 ## 🚀 Getting Started
-**Dependencies.**
+**로그인 프로세스**
 
-### 🔹 AWS
+![](./docs/images/oauth_1.png)
+
+**Dependencies.**
+```
+implementation 'org.springframework.boot:spring-boot-starter-freemarker'
+implementation 'org.springframework.boot:spring-boot-starter-validation'
+implementation group: 'io.jsonwebtoken', name: 'jjwt', version: '0.9.1'
+implementation 'com.google.code.gson:gson'
+implementation 'net.rakugakibox.util:yaml-resource-bundle:1.1'
+```
 
 ### 🔹 Environment
 - Local
-- Dev & Stage
-- Prod
-
-### 🔹 Project Structures
-
-### 🔹 Installing
-1.
-2.
-3.
 
 ## ✅ Release Notes
 * 0.0.1
     * 테스트
-    * 작업 진행 중
 
 ## 🔥 Issues
 
@@ -48,13 +52,14 @@ Explain about this project.
 ozofweird
 
 ## 👤 Authors
-- [ozofweird](https://github.com/ozofweird) - **Kevin Ahn** - <이메일@gmail.com>
+- [ozofweird](https://github.com/ozofweird) - **Kevin Ahn**
 
 ## 🏷 License
 ozofweird
 
 ## 📚 References
 - https://daddyprogrammer.org/post/1012/springboot2-rest-api-social-login-kakao/
+
 ---
 
 ## ✉️ Commit messages (Gitmoji)
